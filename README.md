@@ -1,9 +1,9 @@
 # drug-dispensing-tool
-class work
+class work 
 The above is a school project that we are working on to make a drug dispensing tool. 
-This means that we are looking for a way of connecting the doctor, the drug manufacturing companies, the pharmacies and the patients.
-The website will follow the requirements as written in the pdf files and this will enable creation of different user interfaces for the pharmacies, doctors and patients.
-the website should be able to access the patients location or canask for location by inputing an address so as to locate the pharmacy and the doctor nearest to them.
-this will help them locate a facility near them and maybe even ease delivery. 
-the drugs will also be distibuteed according to location of different pharmacies to enable proper distibution of drugs per locality.
-the requirements are as stated in the pdf files and in the pictures.
+This means that we are looking for a way of connecting the doctor, the drug manufacturing companies, the pharmacies and the patients. 
+The website will follow the requirements as written in the pdf files and this will enable creation of different user interfaces for the pharmacies, doctors and patients. 
+The website should be able to access the patients location or canask for location by inputing an address so as to locate the pharmacy and the doctor nearest to them. 
+This will help them locate a facility near them and maybe even ease delivery.  
+The drugs will also be distibuteed according to location of different pharmacies to enable proper distibution of drugs per locality.
+The requirements are as stated in the pdf files and in the pictures. 
