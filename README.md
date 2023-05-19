@@ -7,3 +7,7 @@ The website should be able to access the patients location or canask for locatio
 This will help them locate a facility near them and maybe even ease delivery.  
 The drugs will also be distibuteed according to location of different pharmacies to enable proper distibution of drugs per locality.
 The requirements are as stated in the pdf files and in the pictures. 
+
+
+currently at version 1, stay tuned for some cool features and updates :)
+if your a visitor and see any bugs, feel free to help and comment on what you saw was wrong with the app
