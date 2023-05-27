@@ -95,3 +95,11 @@ button{
 .acctype{
   display: none;
 }
+
+
+
+@media only screen and (max-width: 425px){
+  .maincontainer{
+    flex-direction: column;
+  }
+}
