@@ -14,7 +14,7 @@
   <div class="maincontainer">
     <div class="formcontainer">
       <div class="toggle">
-        <button class="togglebtn" onclick="toggleswitcher(this, 'signIn')">sign in</button>
+        <button class="togglebtn" onclick="toggleswitcher(this, 'signIn')" id="defaultOpen">sign in</button>
         <button class="togglebtn" onclick="toggleswitcher(this, 'signUp')">sign up</button>
       </div>
 
@@ -28,10 +28,44 @@
     </div>
 
     <div class="togglecontent" id="signUp">
-      <button>Doctor Account</button>
-      <button>Patient Account</button>
-      <button>Pharmacy account</button>
+      <button onclick="accountSwitcher('doctorInput')">Doctor Account</button>
+      <button onclick="accountSwitcher('patientInput')">Patient Account</button>
+      <button onclick="accountSwitcher('pharmacyInput')">Pharmacy account</button>
+      <button class="close" onclick="accountCloser()">close panel</button>
     </div>
+
+    </div>
+
+    <div class="acctype" id="doctorInput">
+
+      <form>
+        <h1>Doctor signUp</h1>
+        <input type="text" name="name" placeholder="name"><br><br>
+        <input type="text" name="email" placeholder="example@domain.com"><br><br>
+        <input class="submitbtn" type="submit" name="submit">
+      </form>
+
+    </div>
+
+    <div class="acctype" id="patientInput">
+
+      <form>
+        <h1>Patient SignUp</h1>
+        <input type="text" name="name" placeholder="name"><br><br>
+        <input type="text" name="email" placeholder="example@domain.com"><br><br>
+        <input class="submitbtn" type="submit" name="submit">
+      </form>
+
+    </div>
+
+    <div class="acctype" id="pharmacyInput">
+
+      <form>
+        <h1>pharmacy SignUp</h1>
+        <input type="text" name="name" placeholder="name"><br><br>
+        <input type="text" name="email" placeholder="example@domain.com"><br><br>
+        <input class="submitbtn" type="submit" name="submit">
+      </form>
 
     </div>
   </div>

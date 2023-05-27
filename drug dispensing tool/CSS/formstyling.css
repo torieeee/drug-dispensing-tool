@@ -47,7 +47,7 @@ button{
 .maincontainer{
   display: flex;
   height: 100vh;
-  flex-direction: column;
+  gap: 30px;
   align-items: center;
   justify-content: center;
   font-family: roboto;
@@ -82,8 +82,24 @@ button{
   flex-direction: column;
 }
 
-#signUp button{
+#signUp button, .close{
   background-color: white;
   margin-top: 20px;
   
+}
+
+#signUp button:active{
+  opacity:  0.4;
+}
+
+.acctype{
+  display: none;
+}
+
+
+
+@media only screen and (max-width: 425px){
+  .maincontainer{
+    flex-direction: column;
+  }
 }
