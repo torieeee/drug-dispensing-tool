@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<link rel="stylesheet" href="CSS/formstyling.css">
+
+<body>
+
+  <div class="maincontainer">
+    <div class="formcontainer">
+      <div class="toggle">
+        <button class="togglebtn" onclick="toggleswitcher(this, 'signIn')">sign in</button>
+        <button class="togglebtn" onclick="toggleswitcher(this, 'signUp')">sign up</button>
+      </div>
+
+    <div class="togglecontent" id="signIn">
+      <form>
+        <h1>Sign in</h1>
+        <input type="text" name="name" placeholder="name"><br><br>
+        <input type="text" name="email" placeholder="example@domain.com"><br><br>
+        <input class="submitbtn" type="submit" name="submit">
+      </form>
+    </div>
+
+    <div class="togglecontent" id="signUp">
+      <button>Doctor Account</button>
+      <button>Patient Account</button>
+      <button>Pharmacy account</button>
+    </div>
+
+    </div>
+  </div>
+
+  
+</body>
+
+<script src="JS/formfunctionality.js"></script>
+
+</html>

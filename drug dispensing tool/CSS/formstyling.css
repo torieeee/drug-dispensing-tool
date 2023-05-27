@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+
+
+
+input{
+  font-family: roboto;
+  font-size: 20px;
+  padding: 6px 17px 6px 17px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background-color: transparent;
+  
+  
+}
+
+
+input:focus{
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.123);
+}
+
+input::placeholder{
+  color: black;
+  font-weight: 100;
+}
+
+
+
+button{
+  background-color: transparent;
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  padding: 6px 17px 6px 17px;
+  transition: 0.8s background-color;
+
+}
+
+.formcontainer{
+  background-color: rgba(128, 128, 128, 0.361);
+  padding: 40px 20px 100px 20px;
+}
+
+.maincontainer{
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: roboto;
+}
+
+
+.submitbtn{
+  margin-top: 30px;
+  background-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 5px;
+}
+
+.submitbtn:active{
+  background-color: black;
+  color: white;
+}
+
+.toggle{
+  display: flex;
+  gap: 40px;
+  font-size: 20px;
+  border-radius: 5px;
+  justify-content: space-around;
+  padding: 6px 17px 6px 17px;
+  background-color: rgba(255, 255, 255, 0.422);
+}
+
+.togglecontent{
+  display: none;
+  flex-direction: column;
+}
+
+#signUp button{
+  background-color: white;
+  margin-top: 20px;
+  
+}
