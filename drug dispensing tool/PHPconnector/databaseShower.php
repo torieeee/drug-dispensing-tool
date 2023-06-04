@@ -17,7 +17,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["submit"])){
     print_r($row);
 
     
-
+  // addition of extra features to show data for the database i.e a for loop
    
 
   }
