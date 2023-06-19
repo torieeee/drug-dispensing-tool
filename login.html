@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>What would you like to Sign in to?</h1>
+    <button onclick="goToAnotherForm()">Patient account</button></br></br>
+    <button onclick="goToAnotherForm1()">Doctor's account</button></br></br>
+    <button onclick="goToAnotherForm2()">Pharmacy</button></br></br>
+    <button onclick="goToAnotherForm3()">Comapany</button></br></br>
+    <!-- JavaScript code to navigate to another form -->
+    <script>
+        function goToAnotherForm() {
+            window.location.href = "form.html"; // Replace with the URL or file path of the another form
+        }
+        function goToAnotherForm1() {
+            window.location.href = "doctor_login.html"; // Replace with the URL or file path of the another form
+        }
+        function goToAnotherForm2() {
+            window.location.href = "pharmacyLogin.html"; // Replace with the URL or file path of the another form
+        }
+        function goToAnotherForm3() {
+            window.location.href = "company-login.html"; // Replace with the URL or file path of the another form
+        }
+
+    </script>
+    <a href="Register.html">Don't have an account? Sign up</a>
+</body>
+
+</html>
