@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Which type of account would you like to delete?</h1>
+    <button type="button"></button>
+    <button onclick="goToAnotherForm()">Patient account</button></br></br>
+    <button onclick="goToAnotherForm3()">Dcotor account</button></br></br>
+    <button onclick="goToAnotherForm4()">Pharmacy account</button></br></br>
+    <button onclick="goToAnotherForm2()">Company account</button></br></br>
+    <script>
+        function goToAnotherForm() {
+            window.location.href = "delete_patient.html";
+        }
+        function goToAnotherForm3() {
+            window.location.href = "delete_doctor.html";
+        }
+        function goToAnotherForm4() {
+            window.location.href = "delete_pharmacy.html";
+        }
+        function goToAnotherForm2() {
+            window.location.href = "delete_company.html"
+        }
+    </script>
+
+</body>
+
+</html>
