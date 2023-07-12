@@ -24,7 +24,7 @@ include_once("Database_connection");
 
 /*
 
-keys -> field vals -> these are fields in your table
+keys -> field vals -> these are fields in your table that you want to show on the table
 
 -> database connection-> where your connections is
 
