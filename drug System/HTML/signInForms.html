@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<link rel="stylesheet" href="../CSS/forms.css">
+
+<body>
+
+  <!--main container holding all the forms in this file-->
+  <div class="maincontainer">
+
+    <!--heading display-->
+    <h1>SIGN IN</h1>
+    
+    <!--this has elements that allows for toggling within the html file to choose a file for registration-->
+    <div class="formToggle">
+
+      <!--this element Patient account is the default display users see-->
+      <button class="togglebtn" onclick="toggle('patientForm',this)" id="defaultDisplay">Patient account</button></br></br>
+      <button class="togglebtn" onclick="toggle('doctorForm',this)">Doctor's account</button></br></br>
+      <button class="togglebtn" onclick="toggle('pharmacyForm',this)">Pharmacy</button></br></br>
+      <button class="togglebtn" onclick="toggle('companyForm',this)">Company</button></br></br>
+      <button class="togglebtn" onclick="toggle('adminform',this)">admin</button><br><br>
+
+    </div>
+
+    <!--Tip the contentforms div is used to allow for shifting of content in the divs-->
+    <!--companySignInForm-->
+    <div class="contentForms" id="companyForm">
+      <form action="../PHP/Company/LoginAuthCompany.php" method="post">
+        <h3>Welcome back!</h3>
+        <input type="text" name="name" id="name" placeholder="name"></br><br>
+        <input type="password" name="password" placeholder="password"></br></br>
+        <input type="submit" value="SIGN IN" id="submit" name="submit"></br></br>
+      </form>
+    </div>
+
+    <!--PatientSignInForm-->
+    <div class="contentForms" id="patientForm">
+        <form action="../PHP/Users/LoginAuth.php" method="post">
+          <h3>Welcome back! Patient</h3>
+          <input type="text" name="first"  placeholder="firstname"><br><br>
+          <input type="password" name="password"  placeholder="password"><br><br>
+          <input type="submit" name="submit" value="SIGN IN" id="submit"><br><br>
+         
+        </form>
+    </div>
+
+    <!--DoctorSignInForm-->
+    <div class="contentForms" id="doctorForm">
+      <form  action="../PHP/Doctors/LoginAuthDoctor.php" method="post">
+        <h3>Welcome back! Doctor!</h3>
+        <input type="text" name="name" placeholder="name"><br><br>
+        <input type="password" name="password" placeholder="password"><br><br>
+        <input type="submit" name="submit" value="SIGN IN" id="submit"><br><br>
+        
+    </form>
+    </div>
+
+    <!--pharmacySignInForm-->
+    <div class="contentForms" id="pharmacyForm">
+      <form action="../PHP/Pharmacy/LoginAuthPharma.php" method="post">
+        <h3>welcome back! pharmacist!</h3>
+        <input type="text" name="name" id="name" placeholder="name"><br><br>
+        <input type="password" name="password" placeholder="password"><br><br>
+        <input type="submit" value="SIGN IN" id="submit" name="submit"><br><br>
+      </form>
+    </div>
+
+    <!--admin Panel access-->
+    <!--admin credentials are manually added to the database-->
+    <div class="contentForms" id="adminform">
+      <form action="../PHP/Admin/adminLogin.php" method="post">
+        <h1>Admin</h1>
+        <input type="text" name="name" id="name" placeholder="name"><br><br>
+        <input type="password" name="password" id="password" placeholder="password"><br><br>
+        <input type="submit" name="submit" id="submit"><br><br>
+      </form>
+    </div>
+
+
+      <!--link to sign uo-->
+      <a href="signUpForms.html">need to sign Up, sign Up here!</a>
+
+  </div>
+
+
+
+
+  <!--this forms are shifted via javascript-->
+  <!--this form also contains unified CSS for simplicity-->
+
+  
+</body>
+
+<script src="../JS/toggleUnified.js"></script>
+
+
+</html>

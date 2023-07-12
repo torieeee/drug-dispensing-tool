@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<link rel="stylesheet" href="../CSS/forms.css">
+
+<body>
+
+  <!--main container holding all the forms in this file-->
+  <div class="maincontainer">
+
+    <!--heading display-->
+    <h1>SIGN UP</h1>
+    
+    <!--this has elements that allows for toggling within the html file to choose a file for registration-->
+    <div class="formToggle">
+
+      <!--this element Patient account is the default display users see-->
+      <button class="togglebtn" onclick="toggle('patientForm',this)" id="defaultDisplay">Patient account</button></br></br>
+      <button class="togglebtn" onclick="toggle('doctorForm',this)">Doctor's account</button></br></br>
+      <button class="togglebtn" onclick="toggle('pharmacyForm',this)">Pharmacy</button></br></br>
+      <button class="togglebtn" onclick="toggle('companyForm',this)">Company</button></br></br>
+
+    </div>
+
+    <!--Tip the contentforms div is used to allow for shifting of content in the divs-->
+    <!--companySignUpForm-->
+    <div class="contentForms" id="companyForm">
+      <form action="../PHP/Company/CompanyAddition.php" method="post">
+        <h1>Company Registration</h1>
+        <input type="text" name="name" id="name" placeholder="name" required></br><br>
+        <input type="text" name="phone" id="phone" placeholder="phoneNumber" required></br></br>
+        <input type="text" name="companyAddress" id="companyAddress" placeholder="address" required><br><br>
+        <input type="password" name="password" id="pass" placeholder="password" required><br><br>
+        <input type="submit" value="Register" id="submit" name="submit"></br></br>
+      </form>
+    </div>
+
+    <!--PatientSignUpForm-->
+    <div class="contentForms" id="patientForm">
+      <form action="../PHP/Users/UserAddition.php" method="post">
+        <h1>Patient Registration</h1>
+        <input type="text" name="fname" id="fname" placeholder="first name" required> <br><br>
+        <input type="text" name="sname" id="sname" placeholder="second name" required><br><br>
+        <input type="text" name="ssn" id="ssn" placeholder="SSN" required><br><br>
+        <input type="text" name="pno" id="pno" placeholder="phone No" required><br><br>
+        <input type="text" name="address" id="address" placeholder="address" required><br><br>
+        <input type="text" name="age" id="age" placeholder="age" required><br><br>
+        <input type="password" id="pw" name="pw" placeholder="password" required><br><br>
+        <input type="submit" value="sign up!" name="submit" id="submit">
+      </form>
+    </div>
+
+    <!--DoctorSignUpForm-->
+    <div class="contentForms" id="doctorForm">
+      <form action="../PHP/Doctors/DoctorAddition.php" method="post">
+        <h1>Doctor Registration</h1> 
+        <input type="text" name="name" id="name" placeholder="name" required> <br><br>
+        <input type="text" name="email" id="email" placeholder="email" required><br><br>
+        <input type="text" name="ssn" id="ssn" placeholder="ssn" required><br><br>
+        <input type="text" name="speciality" id="speciality" placeholder="speciality" required><br><br>
+        <input type="text" name="yoe" id="yoe" placeholder="Y.O.E" required><br><br>
+        <input type="password" name="password" id="pass" placeholder="password" required><br><br>
+        <input type="submit" name="submit" id="submit"  value="register"><br><br>
+      </form>
+    </div>
+
+    <!--pharmacySignUpForm-->
+    <div class="contentForms" id="pharmacyForm">
+      <form action="../PHP/Pharmacy/PharmacyAddition.php" method="post">
+        <h1>Pharmacy registration</h1>
+        <input type="text" name="name" id="name" placeholder="name" required><br><br>
+        <input type="text" name="phoneNumber" id="phoneNumber" placeholder="phone" required><br><br>
+        <input type="text" name="address" id="address" placeholder="address" required><br><br>
+        <input type="password" name="password" id="pharmacyPass" placeholder="password" required><br><br>
+        <input type="submit" value="submit" id="submit" name="submit">
+      </form>
+    </div>
+  
+    <!--link to sign in-->
+    <a href="signInForms.html">need to sign in, sign in here!</a>
+
+
+  </div>
+
+  
+
+  <!--this forms are shifted via javascript-->
+  <!--this form also contains unfied css for simplicity-->
+
+  
+</body>
+
+<script src="../JS/toggleUnified.js"></script>
+
+</html>

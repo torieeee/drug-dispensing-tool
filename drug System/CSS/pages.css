@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+/* key -> the negbtn id is for all buttons that perform deletion actions */
+
+
+
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  margin: 0 0 0 0;
+}
+
+p, ul li{
+  font-family: roboto;
+  width: 500px;
+  font-weight: 100;
+}
+
+/*remove margins from h6&h5*/
+
+h6,h5{
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 100;
+}
+
+button,#submit,#btnDeletionUser,a{
+  padding: 6px 17px 6px 17px;
+  margin-bottom: 10px;
+  font-family: roboto;
+  background-color: transparent;
+  border-width: 1px;
+  transition: 0.3s color, 0.3s background-color;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/*also a style*/
+a{
+  text-decoration: none;
+  border: 1px black solid;
+}
+
+button:hover,#submit:hover,a:hover{
+  background-color: black;
+  color: white;
+}
+
+
+
+
+
+.maincontainer{
+  font-family: roboto;
+}
+
+/* also present in forms.css*/
+.contentForms{
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*set to none to facilitate toggleing*/
+
+.innertogglecontent{
+  display: none
+}
+
+/*overriding qualities of the negative buttons*/
+.negBtn{
+  color: red;
+  border-color: red;
+  border-style: solid;
+}
+
+.negBtn:hover{
+  background-color: red;
+  color: white;
+}
+
+/* navigation bars for the pages*/
+.navbar{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 1px 1px 2px black;
+  width: 100vw;
+}
+
+/*content trait override */
+.content,.footer{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+
+/*override some footer traits*/
+.footer{
+  background-color: rgba(128, 128, 128, 0.555);
+  padding-top: 50px;
+  height: auto;
+}
+
+/* this is for the symbols class and symbolholder and symbolandtextholder, all of them should have similar characteristics*/
+
+.symbolandtextholder{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.symbolholder{
+  width: 133px; /* to lock the width to be similar to the height*/
+  padding: 20px 20px 20px 20px;
+  background-color: rgb(26, 189, 26);
+  text-align: center;
+  border-radius: 250px;
+}
+.symbols{
+  display: inline;
+  width: 133px; /* this width is similar to the height for easy modification*/
+  color: white;
+  font-size: 100px;
+  margin: 0 0 0 0;
+}
+
+/*overrides bg color of symbol holder for wrong to red*/
+
+#wrongsymbolholder{
+  background-color: red;
+}
+
+
+/*how the tables will look when echoed in pages */
+
+table{
+  margin-top: 10%;
+}
+
+table,th,td{
+  padding: 6px 17px 6px 17px;
+  border: 1px black solid;
+  border-collapse: collapse;
+}
