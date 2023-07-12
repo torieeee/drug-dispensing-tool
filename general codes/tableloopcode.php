@@ -10,7 +10,7 @@ include_once("Database_connection");
               $result = $conn->query($sql);
               if ($result -> num_rows > 0){
                 echo "<table>";
-                echo "<tr><th>fieldVal1</th><th>fieldVal2</th></tr>"; 
+                echo "<tr><th>fieldHeading1</th><th>fieldHeading2</th></tr>"; /* --? more headings can be added, not limited to two */
                 while($row = $result->fetch_assoc()){       
                   echo "<tr><td>".($row['fieldVal1'])."</td><td>".($row['fieldVal2'])."</td></tr>";
                 }
