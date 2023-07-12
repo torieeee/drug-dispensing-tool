@@ -1,0 +1,7 @@
+A cool trick to simplify things... in my opinion is to have one CSS file that modifies multiple, this will give the website a uniform feel and simplify your life
+
+i.e for your landingPage and other elements, you can have one CSS file modifiying all your user pages
+and for your form pages you can have one CSS modifying all your forms
+
+all now you have to do is write extra html codes and Vuala...-> the CSS will modify all your html codes as uniformly as possible , remember to link it with
+the <link rel="stylesheet" href="your file location"> tag (goes btwn the head and body tags)
