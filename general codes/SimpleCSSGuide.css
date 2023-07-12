@@ -1,0 +1,46 @@
+/* this is a simple way to make a landing page in CSS */
+
+
+.wrapperContainerName /* the wrapper container is basically a div box with the class Name of your 
+choice, it usually is like a second body and holds everything
+*/{
+
+  display: flex; /* commonly used, this mode enables the wrapper to become dynamic, try it*/
+  flex-direction: row; /* can take different properties, row -> horizontal while column is vertical */
+
+}
+
+/* the <div> or division in full is a very useful tag that can save you lots of time */
+
+.container1,.container2/* a container in the wrapper container any class names can be used, class names
+
+use the .selector while id names use the #selector*/
+{
+
+}
+
+/*usually it is a good practice to wrap elements such as headings and paragraphs with these containers
+give them a class name and style name*/
+
+/* if you want to have this stylesheet in your html, use this
+
+<link rel="stylesheet" href="file location goes here">
+
+this goes inbetween the head and body section and it connects your CSS sheet to the html 
+
+division or <div> in html is very useful when making a landing page, your n
+
+i.e the wrapperContainer(basically the second body can have division as so <div class="maincontainer">
+
+all your other div boxes should be in this, and this should be in the body tag
+
+i.e a navbar can have a division <div class="nav">
+i.e the content box -> <div class="content">
+                          input elements such as <h1> <p> <h2> here
+                        </div>
+
+i.e the footer box -> <div class="footer">
+
+*/
+
+
