@@ -1,3 +1,6 @@
+
+<select  name="name you want to put to help php identify" required>
+<option  value="0" selected disabled>Drop Down heading</option>
 <?php
 
 //template code for population of drop down fields from the database
