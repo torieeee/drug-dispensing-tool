@@ -29,7 +29,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "UPDATE patients SET first_name=?, last_name=?, address=? , age=?, email=? , phone_no=? , password=? WHERE SSN=?";
+$sql = "UPDATE patient SET first_name=?, last_name=?, address=? , age=?, email=? , phone_no=? , password=? WHERE SSN=?";
 $stmt=$conn->prepare($sql);
 if($stmt){
   $stmt->bind_param("sssisiss",$firstName, $lastName, $address, $age, $email, $pno, $password1, $SSN);

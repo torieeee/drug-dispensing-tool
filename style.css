@@ -1,0 +1,26 @@
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    color:aquamarine;
+
+}
+form{ background-color: rgb(8, 8, 39);
+align-content: center;
+border-radius: 20px;
+}
+label{
+    border-radius: 30px;
+color: aqua;
+}
+input,textarea{
+    border-radius:30px;
+    align-content: center;
+}
+body{
+    background-color: aquamarine;
+}
+form{
+    align-items: center;
+    justify-content: center;
+    
+}

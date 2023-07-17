@@ -17,10 +17,8 @@ $stmt1=$conn->prepare($sql1);
 if($stmt1){
     $stmt1->bind-param("s",$SSN);
     $stmt1->execute();
-    $result1=$stmt1->get_result();
-    if ($result->num_rows > 0){
-        
-    }
+    $specilaity=$stmt1->get_result();
+    
 }
 
 $sql = "SELECT * FROM symptoms WHERE specialist = ?";

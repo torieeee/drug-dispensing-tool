@@ -17,7 +17,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-$sql = "UPDATE companies SET phone_no=?, Name=? WHERE Name=?";
+$sql = "UPDATE company SET phone_no=?, Name=? WHERE Name=?";
 $stmt=$conn->prepare($sql);
 if($stmt){
   $stmt->bind_param("is",$Phone,$Name,);

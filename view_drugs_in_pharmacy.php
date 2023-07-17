@@ -1,6 +1,4 @@
 <?php
-session_start();
-
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -10,17 +8,15 @@ $dbname = "drug dispensing tool";
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
-
 }
-$Name=$_SESSION['Name'];
 
+$companyName = "ABC Company"; // Replace with the actual company name obtained from earlier code
 
-
-$sql = "SELECT * FROM drug_info WHERE company = ?";
+$sql = "SELECT * FROM drug in pharmacy WHERE pharmacy= ?";
 $stmt = $conn->prepare($sql);
 if ($stmt) {
     // Bind the company name to the prepared statement
-    $stmt->bind_param("s", $Name);
+    $stmt->bind_param("s", $companyName);
     
     // Execute the prepared statement
     $stmt->execute();

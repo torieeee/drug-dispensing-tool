@@ -22,7 +22,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-$sql = "UPDATE doctors SET SSN=? Name=?, yoe=?, speciality=? , email=? WHERE SSN=?";
+$sql = "UPDATE doctor SET SSN=? Name=?, yoe=?, speciality=? , email=? WHERE SSN=?";
 $stmt=$conn->prepare($sql);
 if($stmt){
   $stmt->bind_param("sssss",$SSN,$Name, $speciality,$yoe,$email);
