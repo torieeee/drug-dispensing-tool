@@ -6,20 +6,22 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="container">
-    <form action="new_drugs.php" method="post">
+    <form action="add_drugs_to_pharmacy.php">
+
         <label for="drug_no"> Drug number</label></br>
         <input type="text" name="drug_no" id="drug_no"></br>
-        <label for="name">Drug Name</label></br>
-        <input type="text" name="name" id="name"></br>
+        <label for="price">Price</label></br>
+        <input type="text" name="price"id="price"></br>
         <label for="formula">Drug formula</label></br>
         <input type="text" name="formula" id="formula"></br>
         <label for="price">Price</label></br>
         <input type="text" name="price" id="price"></br>
         <label for="company">Company manufacturing the drug</label></br>
         <input type="text" name="company" id="company"></br></br>
+        <label for="quantity"> Quantity available</label>
+        <input type="text" name="quantity" id="quantity">
+
         <input type="submit" value="ADD DRUG">
     </form>
-</div>
 </body>
 </html>
