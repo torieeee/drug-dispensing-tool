@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sign in here">
+    <title>Registration</title>
+    <h1>Sign up here!</h1>
+</head>
+
+<body style="background-color: powderblue;">
+    <style>
+        form {
+            background-image: url('my_doctor.jpg');
+            background-repeat: no-repeat;
+
+
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            outline: none;
+
+
+        }
+
+        img {
+            width: 100px;
+            height: 100px;
+
+            border-radius: 10px;
+            float: left;
+            margin-right: 10px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            border-radius: 30px;
+            outline: none;
+            border: none;
+
+        }
+    </style>
+    <div class="container"></div>
+    <form action="process.php" method="post">
+
+
+        <label style="color:rgb(172, 110, 231)" for="fname">First name</label><br>
+        <input type="text" name="fname" id="fname"> <br>
+        <label style="color:rgb(172, 110, 231)" for="sname">Second name</label><br>
+        <input type="text" name="sname" id="sname"><br>
+        <label style="color:rgb(172, 110, 231)" for="ssn">SSN</label><br>
+        <input type="text" name="ssn" id="ssn"><br>
+        <label style="color:rgb(172, 110, 231)" for="pno">Phone number</label><br>
+        <input type="text" name="pno" id="pno"><br>
+        <label style="color:rgb(172, 110, 231)" for="address">Address</label><br>
+        <input type="text" name="address" id="address"><br>
+        <label style="color:rgb(172, 110, 231)" for="age">Date of birth</label><br>
+        <input type="date" name="age" id="age"><br>
+        <label style="color:rgb(172, 110, 231)" for="email">Email</label><br>
+        <input type="text" name="email" id="email"><br>
+        <label style="color:rgb(172, 110, 231)" for="pn">Password:</label><br>
+        <input type="password" id="pw" name="pw" /></label><br><br>
+
+        <input onclick="document.getElementById('form.html')" type="submit" name="Register" id="register"><br>
+
+    </form>
+</div>
+
+    <a href="form.html">Already hava an account? Login instead!</a>
+</body>
+
+</html>

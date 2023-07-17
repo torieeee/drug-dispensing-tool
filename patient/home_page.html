@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="icon" href="icons8-instagram-64.png" type="image/png">
+
+</head>
+<body>
+    <style>
+        .container{
+            background: linear-gradient(rgba(0,0,0,0.75));
+            width: 100%;
+            height: 100vh;
+            background-position: center;
+            background-size: cover;
+
+        }
+        *{
+            margin:0;
+            padding:0;
+            font-family: sans-serif;
+            
+        }
+        .banner{
+            width:100%;
+            height:100%;
+            background-image: linear-gradient(rgba(61, 56, 84, 0.75),rgba(29, 43, 72, 0.75)),url(IMG_20230428_211239.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+        .lower{
+            width: 100%;
+            height: 150%;
+            background-image: url(Grey_background.jpg);
+        }
+        .navbar{
+            width:85%;
+            margin:auto;
+            padding: 35px 0;
+            display:flex;
+            align-items: center;
+            justify-content:space-between;
+        }
+        .logo{
+            width: 100px;
+            cursor: pointer;
+            border-radius: 30px;
+        }
+        .navbar ul li{
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            position: relative;
+        }
+        .navbar ul li a{
+            text-decoration:double;
+            color: aqua;
+            text-transform: capitalize;
+
+        }
+        .navbar ul li::after{
+            content:'';
+            height: 3px;
+            width:0;
+            background: rgba(227, 226, 231, 0.4);
+            position: absolute;
+            left:0;
+            bottom:-10px;
+            transition: 0.5s;
+
+        }
+        .navbar ul li:hover::after{
+            width: 100%;
+        }
+        .content{
+            
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            text-align:center;
+            color: aquamarine;
+            
+        }
+        .content h1{
+            font-size: 70px;
+            margin-top: 80px;
+            
+
+        }
+        .card{
+            width: 100%;
+            position: absolute;
+            top: 115%;
+            
+            text-align: center;
+            
+        }
+        .card h2{
+            font-size: 60px;
+            color: aqua;
+
+        }
+        .card p{
+            margin: 20px auto;
+            font-weight: 100;
+            line-height: 20px;
+            color: aqua;
+            font-size: 50px;
+            text-shadow: 0 0 15px #999; 
+            font-size: 20px;
+
+        }
+        
+        .content p{
+            margin: 20px auto;
+            font-weight: 100;
+            line-height: 25px ;
+        }
+        button{
+            width: 200px;
+            padding: 15px 0;
+            text-align: center;
+            margin: 20px 10px;
+            border-radius: 25px;
+            font-weight: bold;
+            border: 2px solid #0096;
+            background: transparent ;
+            color: aqua;
+            cursor: progress;
+            position: relative;
+            overflow: hidden;
+        }
+        span{
+            background: #0096;
+            height:100%;
+            width: 0;
+            border-radius: 25px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            z-index: -1;
+            transition: 0.5s;
+        }
+        button:hover span{
+            width: 100%;
+        }
+        button:hover{
+border:none;
+        }
+        .trust{
+           width: 200px;
+           height: 230px;
+           display: inline-flex; 
+           border-radius: 10px;
+           padding: 15px 25px;
+           box-sizing: border-box;
+           cursor: not-allowed;
+           margin: 10px 15;
+           transform: 0.5s;
+           top: 200%;
+           align-items: center;
+           justify-content: space-between;
+           text-align: center;
+           
+        }
+        .KCB{
+background-image: url(KCB.png);
+        }
+        .SU{
+            background-image: url(Strathmore\ University.png);
+
+        }
+        .MS{
+            background-image: url(microsoft.png) ;
+        }
+        .WHO{
+            background-image: url(who.jpg);
+        }
+        .D0{
+            background-image: url(Def0zero.jpg);
+        }
+        .trust:hover{
+            transform:translateY(-10px);
+        }
+        h5{
+            font-family: cursive;
+            color: blue;
+            text-shadow: 0 0 15px #999;
+        }
+    h3{
+        color: blue;
+        font-family: cursive;
+        align-items: center;
+        font-size: 25px;
+        text-align: center;
+        size: 25px;
+    }
+    h4{
+        color: azure;
+font-size: 30px;
+font-family: cursive;
+    }
+    .contacts{
+        top: 170%;
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        justify-content: space-between;
+        transform: 0.5s;
+        cursor: progress;
+        flex-basis: auto;
+    }
+    .col{
+        top: 200%;
+        position: absolute;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    </style>
+    <script>
+function form2(){
+    window.location.href="register.html";
+}
+    </script>
+ <div class="container"> 
+    <div class="banner">
+        <div class="navbar">
+            <img src="my_doctor.jpg" alt="tolee" class="logo">
+            <ul>
+                <li><a href="Welcome_page.html">Join us</a></li>
+                <li><a href="#card">About us</a></li>
+                <li><a href="#contacts"> Contact us</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>WELCOME TO TOLEE</h1>
+            <p>Be able to hear from a doctor<br> and even buy medication form the comfort of your home</p>
+            <p> All this without even leaving your house</p>
+            <div>
+                <button type="button" onclick="form2()"><span></span>Sign up now</button>
+            </div>
+        </div>
+    </div>
+    <div class="lower">
+    <div class="card" id="card">
+        <h2>What do we do?</h2>
+        <p> Tolee provides you with an easy method of connecting with doctors<br>
+        Why line up in a hospital all day while you can do this<br> in the comfort of your home and even get your medication<br> by a simple touch of your phone. <br> 
+    Tolee is not only for patients but also for doctors, pharmacists<br> and even drug manufacturingcompanies. <br><em>Why don't you sign up and test it out for yourself?</em> </p>
+</div>
+<div class="contacts" id="contacts">
+<h4> Would you like to reach out to us?</h4>
+<a href="https://instagram.com/nyamzzz?igshid=MzNlNGNkZWQ4Mg=="><img src="icons8-instagram-64.png" alt="our instagram"> </a>
+<a href="mailto:victoria.mwaura@strathmore.edu"> <img  src="icons8-email-48.png" alt="email us"></a>
+<a href="https://github.com/torieeee/drug-dispensing-tool/tree/main/drug%20dispensing%20tool"><img  src="github favicon.jpg" alt="view our github" style="width:55 px; height: 55px;"></a>
+</div>
+    
+    <div class="col">
+<h3>Who are our partners?<br></h3>
+<div class="trust SU">
+    <h5>Strathmore University</h5>
+
+</div>
+<div class="trust KCB">
+    <h5>KCB bank</h5>
+
+</div>
+<div class="trust D0">
+    <h5>Def0zero</h5>
+    
+
+</div>
+<div class="trust MS">
+    <h5>Microsoft</h5>
+    
+</div>
+<div class="trust WHO">
+    <h5>World Health Organization</h5>
+    
+</div>
+    </div>
+</div>
+</div>
+</body>
+</html>
