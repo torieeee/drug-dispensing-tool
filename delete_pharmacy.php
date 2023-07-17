@@ -20,27 +20,7 @@ if ($stmt) {
  if ($stmt->execute()) {
     $result = $stmt->get_result();
     
-    // Handle the result as needed
-    echo'
-    <body>
-    <h1>Welcome to tolee!</h1>
-    <h2>What would you like to do?</h2>
-    <button onclick="goToAnotherForm()">Register</button></br></br>
-
-    <!-- JavaScript code to navigate to another form -->
-    <script>
-        function goToAnotherForm() {
-            window.location.href = "Register.html"; // Replace with the URL or file path of the another form
-        }
-        function goToAnotherForm2() {
-            window.location.href = "login.html"; // Replace with the URL or file path of the another form
-        }
-
-    </script>
-    <button 
-    onclick="goToAnotherForm2()">Login</button></br></br>
-</body>';
-    // Close the statement
+    header("Location:welcome_page.html");
     $stmt->close();
 } else {
     // Handle the execution error

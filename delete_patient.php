@@ -9,7 +9,7 @@ if($conn->connect_error){
     die("Connection failed".$conn->connect_error);
 }
 $ssn=$_POST['doctor_SSN'];
-$sql="DELETE * FROM doctors WHERE SSN =?"; 
+$sql="DELETE * FROM patient WHERE SSN =?"; 
 $stmt = $conn->prepare($sql);
 if ($stmt) {
     // Bind the values to the prepared statement

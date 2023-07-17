@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <div class="container">
     <form action="database.php" method="post">
         <h1>Karibu daktari!</h1>
         <h2>Enter your details</h2>
@@ -19,14 +20,25 @@
         <label style="color:rgb(172, 110, 231)" for="ssn">SSN :</label><br>
         <input type="text" name="ssn" id="ssn"><br>
         <label style="color:rgb(172, 110, 231)" for="pno">Speciality :</label><br>
-        <input type="text" name="speciality" id="speciality"><br>
+        <select name="specialist" id="specialist">
+            <option value="cardiologist"> cardiologist</option>
+            <option value="neurologist">neurologist</option>
+            <option value="gynacologist"> gynacologist</option>
+            <option value="ENT specilaist">ENT specilaist</option>
+            <option value="orthopedic">orthopedic </option>
+            <option value="ophthalmologist">ophthalmologist</option>
+            <option value="dermatologist"> dermatologist</option>
+            <option value="radiologist">radiologist</option>
+            
+
+        </select>
         <label style="color:rgb(172, 110, 231)" for="address">Years of experience: </label><br>
         <input type="text" name="yoe" id="yoe"><br>
         <input type="submit" name="Register" id="register"><br>
         <a href="doctor_login.html">Already hava an account? Login instead!</a>
 
     </form>
-
+</div>
 
 </body>
 

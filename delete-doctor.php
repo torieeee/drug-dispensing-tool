@@ -11,7 +11,7 @@ if($conn->connect_error){
 
 $ssn = isset($_POST['doctor_SSN']) ? $_POST['doctor_SSN'] : '';
 $ssn = $conn->real_escape_string($ssn);
-$sql="DELETE  FROM doctors WHERE SSN =?"; 
+$sql="DELETE  FROM doctor WHERE SSN =?"; 
 $stmt = $conn->prepare($sql);
 if ($stmt) {
     // Bind the values to the prepared statement
@@ -21,10 +21,8 @@ if ($stmt) {
     // Execute the prepared statement
     if ($stmt->execute()) {
         $result = $stmt->get_result();
+        header("Location: welcome_page.html");
         
-        // Handle the result as needed
-        
-        // Close the statement
         $stmt->close();
     } else {
         // Handle the execution error

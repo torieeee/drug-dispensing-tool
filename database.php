@@ -2,8 +2,13 @@
 $Name=$_POST['name'];
 
 
-$Phone=$_POST['phone'];
+$SSN=$_POST['ssn'];
 
+$email=$_POST['email'];
+
+$yoe=$_POST['yoe'];
+$speciality=$_POST['specialitist'];
+     
 
 
 $servername = "localhost";
@@ -18,11 +23,11 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO company  ( name,phone_no)
-VALUES ('$Name','$Phone')";
+$sql = "INSERT INTO doctor (SSN, name,email,speciality,yoe)
+VALUES ('$SSN','$Name','$email','$speciality','$yoe')";
 
 if ($conn->query($sql) === TRUE) {
-  header("Location: company-login.html");
+  header("Location: doctor_login.html");
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }

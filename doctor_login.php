@@ -1,4 +1,5 @@
 <?php
+session_start();
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -14,8 +15,10 @@ $Name=$_POST['first'];
 
 
 $SSN=$_POST['SSN'];
+$_SESSION['Name']=$Name;
+$_SESSION['SSN']=$SSN;
 
-$sql="SELECT * FROM doctors WHERE name =?  AND SSN =?"; 
+$sql="SELECT * FROM doctor WHERE name =?  AND SSN =?"; 
 $stmt = $conn->prepare($sql);
 if ($stmt) {
     // Bind the values to the prepared statement
@@ -28,26 +31,15 @@ if ($stmt) {
     // Check if any rows were returned
     $result = $stmt->get_result();
     if ($result->num_rows > 0) {
-      echo '
-    
-        <h1
-
-            style="font-family: Edwardian Script ITC, cursive;">Welcome'.$Name.'  </br>
-            What do we have lined up for you today?</h1>
-        <input style="color:blue;background-color: aquamarine;" ; type="button"
-            value="View other specialists?"><br><br>
-     <input style="color:blue;background-color: aquamarine;" type="button" value="View Requests"><br><br>
-     <input style="color:blue;background-color: aquamarine;" type="button" value=" Prescibe medication"><br><br>
-        <input style="color:blue;background-color: aquamarine; " type="button"
-            value=" View contaracts from different places "><br><br>
-      <input style="color:blue;background-color: aquamarine; " type="button" value=" Approve pharmacy "><br><br>';
-    
-
+      header("Location: activities_for_doctor.html");
+exit();
     } else {
         echo "Login failed";
     }
+    
     // Close the prepared statement
     $stmt->close();
 } else {
     echo "Error: " . $conn->error;
 }
+?>
