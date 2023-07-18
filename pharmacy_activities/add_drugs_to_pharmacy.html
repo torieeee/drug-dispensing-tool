@@ -6,7 +6,8 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="add_drugs_to_pharmacy.php">
+    <div class="container">
+    <form action="add_drugs_to_pharmacy.php" method="post">
 
         <label for="drug_no"> Drug number</label></br>
         <input type="text" name="drug_no" id="drug_no"></br>
@@ -14,8 +15,7 @@
         <input type="text" name="price"id="price"></br>
         <label for="formula">Drug formula</label></br>
         <input type="text" name="formula" id="formula"></br>
-        <label for="price">Price</label></br>
-        <input type="text" name="price" id="price"></br>
+        
         <label for="company">Company manufacturing the drug</label></br>
         <input type="text" name="company" id="company"></br></br>
         <label for="quantity"> Quantity available</label>
@@ -23,5 +23,6 @@
 
         <input type="submit" value="ADD DRUG">
     </form>
+</div>
 </body>
 </html>
