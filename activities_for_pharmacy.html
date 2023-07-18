@@ -5,19 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Activity page</title>
+    <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
   <div class="container">
-    <button type="button" onclick="sell()"> SELL MEDICATION</button>
-<button onclick="add()">Add medication to the pharmacy</button>
-<button onclick="contract()">Make Contract</button>
-<button onclick="view()">view contracts available</button>
-<button onclick="stock()">View drugs in stock</button>
-<button onclick=""></button>
+    <h2>What would you like to do today?</h2>
+    <button type="button" onclick="sell()"> SELL MEDICATION</button><br>
+<button onclick="add()">Add medication to the pharmacy</button><br>
+<button onclick="contract()">Make Contract</button><br>
+<button onclick="view()">view contracts available</button><br>
+<button onclick="stock()">View drugs in stock</button><br>
+<button onclick="view2()">Sell based on prescriptions</button><br>
+
 <script>
+  function view2(){
+    window.location.href="view_prescriptions_pharmacy.php"
+  }
   function sell(){
-    window.location.href="sell_drugs_in-pharmacy.php"
+    window.location.href="sell_drugs.html"
   }  
   function add(){
     window.location.href="add_drugs_to_pharmacy.html"
@@ -31,7 +38,7 @@
   function stock(){
     window.location.href="view_drugs_in_pharmacy.php"
   }
-  
+
 </script>
 </div>
 </body>
