@@ -2,10 +2,10 @@
 include 'database1.php';
 session_start();
 $SSN=$_SESSION['SSN'];
-$sql="SELECT * FROM prescriptions WHERE SSN=?";
-$stmt=$conn->prepare($sql)
+$sql="SELECT * FROM prescription WHERE SSN=?";
+$stmt=$conn->prepare($sql);
 if($stmt){
-    $stmt-> bind_param("s",$Name);
+    $stmt-> bind_param("s",$SSN);
 $stmt->execute();
 $result=$stmt->get_result();
 if ($result->num_rows > 0) {
@@ -18,7 +18,8 @@ if ($result->num_rows > 0) {
                 <th>drugs</th>
                 <th>Prescription_no</th>
                 <th>recommendations</th>
-                <th>pharmacy<th>
+                <th>pharmacy</th>
+                <th>order</th>
             </tr>
         </thead>
         <tbody>';
@@ -33,7 +34,7 @@ if ($result->num_rows > 0) {
             <td>' . $row['prescription_no'] . '</td>
             <td>'.$row['recommendations'].'</td>
             <td>'.$row['pharmacy_recommended'].'</td>
-            
+            <td><a href="order_drugs.html>order</a></td>
             
         </tr>';
     }
