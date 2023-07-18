@@ -48,7 +48,7 @@ if($stmt){
             <td>' . $row['end_date'] . '</td>
             <td>' . $row['terms'] . '</td>
             <td>' . $row['supervisor'] . '</td>
-            <td>' . $row['drugs'] . '</td>
+            <td>' . $row['drugs_delivered'] . '</td>
             <td>' . $row['company'] . '</td>
             
         </tr>';
