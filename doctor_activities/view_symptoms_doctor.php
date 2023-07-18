@@ -15,27 +15,19 @@ if ($conn->connect_error) {
 }
 $SSN=$_SESSION['SSN'];
 // Fetch data from the database
-$sql1="SELECT specialization from doctors where SSN=?";
-$stmt1=$conn->prepare($sql1);
-if($stmt1){
-    $stmt1->bind-param("s",$SSN);
-    $stmt1->execute();
-    $result1=$stmt1->get_result();
-    if ($result1->num_rows > 0){
-      $row = $result1->fetch_assoc();
-        $specialist=$stmt->get_result();
-        $sql = "SELECT * FROM symptoms WHERE specialist=?";
+
+        $sql = "SELECT * FROM symptom ";
 $stmt=$conn->prepare($sql);
 if($stmt){
-  $stmt->bind_param("s",$row['specialization']);
+  
   $stmt->execute();
   $result=$stmt->get_result();
 }
 
 
-      }
+      
         
-    }
+    
 
 
 
@@ -45,22 +37,35 @@ if($stmt){
 <table>
   <tr>
     <th>Symptoms no</th>
+    <th>Specilaist required</th>
     <th>Patient id</th>
     <th>Symptoms</th>
+    <th> prescribe</th>
   </tr>
   <?php
 
       if (isset($result) && $result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
       echo "<tr>";
+      echo "<td>" . $row["symptoms_no"] . "</td>";
+      echo "<td>" . $row["specialist"] . "</td>";
       echo "<td>" . $row["patient_ssn"] . "</td>";
-      echo "<td>" . $row["patient_name"] . "</td>";
-      echo "<td><a href='prescription.html?patient_id=" . $row["patient_id"] . "'>Prescribe Medication</a></td>";
+      echo "<td>" . $row["symptoms"] . "</td>";
+
+      echo "<td><a href='prescription.html?patient_id=" . $row["patient_ssn"] . "'>Prescribe Medication</a></td>";
+      if (isset($_SESSION['patient_id'])) {
+        $patientId = $_SESSION['patient_id'];
+        echo "<td><a href='prescription.html?patient_id=" . $patientId . "'>Prescribe Medication</a></td>";
+      } else {
+        echo "<td>N/A</td>";
+      }
       echo "</tr>";
+      
     }
   } else {
     echo "<tr><td colspan='3'>No data found</td></tr>";
   }
+  
   ?>
 </table>
 
