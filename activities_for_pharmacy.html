@@ -12,14 +12,18 @@
 <body>
   <div class="container">
     <h2>What would you like to do today?</h2>
-    <button type="button" onclick="sell()"> SELL MEDICATION</button><br>
+    <button type="button" onclick="sell()"><span></span> SELL MEDICATION</button><br>
 <button onclick="add()">Add medication to the pharmacy</button><br>
-<button onclick="contract()">Make Contract</button><br>
-<button onclick="view()">view contracts available</button><br>
-<button onclick="stock()">View drugs in stock</button><br>
-<button onclick="view2()">Sell based on prescriptions</button><br>
+<button onclick="contract()"><span></span>Make Contract</button><br>
+<button onclick="view3()"><span></span>View all the drugs</button><br>
+<button onclick="view()"><span></span>view contracts available</button><br>
+<button onclick="stock()"><span></span>View drugs in stock</button><br>
+<button onclick="view2()"><span></span>Sell based on prescriptions</button><br>
 
 <script>
+  function view3(){
+    window.location.href="view_all_drugs.php"
+  }
   function view2(){
     window.location.href="view_prescriptions_pharmacy.php"
   }

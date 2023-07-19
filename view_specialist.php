@@ -19,7 +19,7 @@ $startFrom = ($currentPage - 1) * $resultsPerPage;
 
 
 // Fetch data from the database
-$sql = "SELECT * FROM doctors LIMIT $startFrom,$resultsPerPage ";
+$sql = "SELECT * FROM doctor LIMIT $startFrom,$resultsPerPage";
 $result = $conn->query($sql);
 // Count the total number of rows
 $totalRows = $result->num_rows;

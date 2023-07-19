@@ -13,7 +13,7 @@ if ($conn->connect_error) {
 }
 
 // Fetch data from the database
-$sql = "SELECT * FROM patients";
+$sql = "SELECT * FROM patient";
 $result = $conn->query($sql);
 
 ?>
@@ -46,7 +46,7 @@ $result = $conn->query($sql);
 
             <th>Email</th>
             
-<th>age</th>
+
 
         </tr>
         <?php
@@ -60,7 +60,7 @@ $result = $conn->query($sql);
                 echo "<td>" . $row["phone_no"] . "</td>";
                 echo "<td>" . $row["address"] . "</td>";
                 echo "<td>" . $row["email"] . "</td>";
-                echo "<td>" . $row["age"] . "</td>";
+                
                 echo "</tr>";
             }
         } else {

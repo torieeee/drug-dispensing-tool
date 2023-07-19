@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Pharmacy page</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="container">
-    <form name="SignUp" action="update_pharmacy.php" method="post">
+    <div class="container"></div>
+    <form name="SignUp" action="pharmacy.php" method="post">
         <h1>Karibu!</h1>
         <label style="color:rgb(172, 110, 231)" for="name"> Pharmacy Name :</label><br>
         <input type="text" name="name" id="name"> <br>
@@ -19,9 +19,9 @@
         <label style="color:rgb(172, 110, 231)" for="pno">Phone number :</label><br>
         <input type="text" name="pno" id="pno"><br>
         <input type="submit" name="Register" id="register"><br>
-        <p>The name of the pharmacy can not be changed</p>
+        <a href="pharmacyLogin.html">Already hava an account? Login instead!</a>
+    </div>
     </form>
-</div>
 </body>
 
 </html>

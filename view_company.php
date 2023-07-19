@@ -19,7 +19,7 @@ $startFrom = ($currentPage - 1) * $resultsPerPage;
 
 
 // Fetch data from the database
-$sql = "SELECT * FROM pharmacies LIMIT $startFrom,$resultsPerPage";
+$sql = "SELECT * FROM company LIMIT $startFrom,$resultsPerPage";
 $result = $conn->query($sql);
 // Count the total number of rows
 $totalRows = $result->num_rows;
@@ -49,9 +49,8 @@ $totalPages = ceil($totalRows / $resultsPerPage);
     <h2>Doctors</h2>
     <table>
         <tr>
-            <th>Pharmacy</th>
+            <th>Company name</th>
             <th>Phone number</th>
-            <th>Address</th>
             
 
         </tr>
@@ -62,7 +61,6 @@ $totalPages = ceil($totalRows / $resultsPerPage);
                 echo "<tr>";
                 echo "<td>" . $row["name"] . "</td>";
                 echo "<td>" . $row["phone_no"] . "</td>";
-                echo "<td>" . $row["address"] . "</td>";
                 
                 echo "</tr>";
             }

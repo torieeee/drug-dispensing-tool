@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Doctors page</title>
     
 </head>
@@ -18,13 +19,16 @@
 
         <input style="color:blue;background-color: aquamarine;" type="button" value="View Requests" onclick="goToAnotherFrom()"><br><br>
         <input style="color:blue;background-color: aquamarine;" type="button" value="Update account " onclick="goToAnotherForm1()"><br><br>
-        
+        <button onclick="contract()"><span></span>View contracts</button>
     <script>
         function goToAnotherFrom(){
             window.location.href="view_symptoms_doctor.php"
         }
         function goToAnotherForm1(){
             window.location.href="update_dontor.html"
+        }
+        function contract(){
+            window.location.href="view_contracts.php"
         }
          
     </script>

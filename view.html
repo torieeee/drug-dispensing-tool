@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+    <button onclick="doctor()"><span></span>VIEW DOCTORS</button>
+    <button onclick="patient()"><span> </span>View patients</button>
+    <button onclick="companies()"><span></span>View Companies</button>
+    <button onclick="pharmacy()"><span></span>view pharmacies</button>
+</div>
+<script>
+    function doctor(){
+        window.location.href="view_specialist.php"
+    }
+    function patient(){
+        window.location.href="view_patients.php"
+    }
+    function company(){
+        window.location.href="view_companies.php"
+    }
+    function pharmacy(){
+        window.location.href="view_pharmacies.php"
+    }
+</script>
+</body>
+</html>

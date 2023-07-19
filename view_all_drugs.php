@@ -7,7 +7,7 @@ $conn=new mysqli($servername,$username,$password,$dbname);
 if($conn->connect_error){
     die("Connection failed".$conn->connect_error);
 }
-$sql = "SELECT * FROM drugs";
+$sql = "SELECT * FROM drug_info";
 $result = $conn->query($sql);
 ?>
 <!DOCTYPE html>

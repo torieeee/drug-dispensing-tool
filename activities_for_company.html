@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Activity page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <div class="container">
 <body>
@@ -19,10 +20,10 @@ echo $Name;?><br> What would you like to do today?</h1>
         value="View doctors available"><br><br>
     <script>
         function goToAnotherForm() {
-            window.location.href = "view_specialist.php"; // Replace with the URL or file path of the another form
+            window.location.href = "view_specialist.php"; 
         }
-        function form(){
-            window.location.href="add_new_drugs_company.html"
+        function form1() {
+            window.location.href = "add_new_drugs_company.html" 
         }
         function form2(){
             window.location.href="view_contracts.php "
@@ -40,7 +41,7 @@ echo $Name;?><br> What would you like to do today?</h1>
             window.location.href="make_contract.html"
          }
     </script>
-    <input style="color:blue;background-color: aquamarine;" type="button" value="Add medication" onclick="form()"></br></br>
+    <input style="color:blue;background-color: aquamarine;" type="button" value="Add medication" onclick="form1()"></br></br>
     <input style="color:blue;background-color: aquamarine;" type="button" value=" View all medication" onclick="form4()"></br></br>
     <input style="color:blue;background-color: aquamarine;" type="button" value=" View company medication" onclick="form5()"></br></br>
     <input style="color:blue;background-color: aquamarine; " type="button"

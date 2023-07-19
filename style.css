@@ -1,26 +1,174 @@
+*{
+    margin:0;
+    font-family: cursive;
+}
 h1{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
-    color:aquamarine;
+    color:blueviolet;
 
 }
-form{ background-color: rgb(8, 8, 39);
-align-content: center;
+h2{
+    color: blanchedalmond;
+}
+h3{
+    color: aquamarine;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+h4{
+    color: chartreuse;
+}
+h5{
+    color: burlywood;
+}
+
+form{ 
+    background: transparent;
+    text-align: center;
+align-items: center;
+justify-content: center;
 border-radius: 20px;
+width: 100%;
+
+top: 50%;
+transform: translateY(-50%);
+position: absolute;
 }
 label{
     border-radius: 30px;
-color: aqua;
+color: blue;
 }
 input,textarea{
     border-radius:30px;
     align-content: center;
 }
+
 body{
-    background-color: aquamarine;
+    background-image:linear-gradient(rgb(0,0,0,0.75),rgba(0,0,0,0.75)),url(R.jpg);
 }
+/*
 form{
+    background-color: azure;
     align-items: center;
     justify-content: center;
     
+}*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+
+
+html{
+  scroll-behavior: smooth;
 }
+
+input{ /* how all inputs in the forms will look like */
+  padding: 6px 17px 6px 17px;
+  font-family: roboto;
+  font-size: 16px;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+/* buttons */
+button,#submit{
+  padding: 6px 17px 6px 17px;
+  font-family: roboto;
+  background-color: transparent;
+  border-width: 1px;
+  transition: 0.3s color, 0.3s background-color
+}
+
+#submit:hover{
+  background-color: black;
+  color: white;
+}
+
+/* links */
+a{
+  padding-bottom: 10px;
+  text-decoration: none;
+  color:chartreuse;
+}
+
+a:hover{
+  opacity: 0.6;
+}
+
+/*maincontainer, basically the wrapper container */
+.maincontainer{
+  display: flex;
+  flex-direction: column;
+  font-family: roboto;
+  align-items: center;
+
+}
+.container{
+    width: 100%;
+    height: 100%;
+    /*background-image: linear-gradient(rgba(0,0,0, 0.75),rgba(0,0,0, 0.75)),url(R.jpg);*/
+}
+button{
+    color: aquamarine;
+    border-radius: 20px;
+    width: 200px;
+    padding: 15px;
+    margin:20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid #009688;
+    background: transparent;
+    color: blue;
+    cursor: pointer;
+
+position: relative;
+overflow: hidden;
+    
+}
+span{
+    background: #009688;
+    width: 0%;
+    height:100%;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border:none;
+}
+input{
+    color: aquamarine;
+    border-radius: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+label{
+    color: aquamarine;
+    
+}
+p{
+    color: aliceblue;
+}
+
+/* meant for javascript but commented out in this case
+.contentForms{
+  display: none;
+
+}
+*/
+
+/* also meant for js but commented out in your case 
+.formToggle{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding-bottom: 25px;
+}
+
+*/
+

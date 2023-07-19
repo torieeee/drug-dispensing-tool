@@ -14,6 +14,7 @@ if ($result->num_rows > 0) {
         <thead>
             <tr>
                 <th>diagnosis</th>
+                <th>patient ssn</th>
                 <th>doctor_ssn</th>
                 <th>drugs</th>
                 <th>Prescription_no</th>
@@ -28,7 +29,7 @@ if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
         echo '<tr>
             <td>' . $row['diagnosis'] . '</td>
-
+<td>'.$row['patient_ssn'].'</td>
             <td>' . $row['doctor_ssn'] . '</td>
             <td>' . $row['drugs'] . '</td>
             <td>' . $row['prescription_no'] . '</td>
